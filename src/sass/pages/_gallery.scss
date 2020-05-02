@@ -1,0 +1,15 @@
+.gallery {
+    padding: 8rem 0;
+    text-align: center;
+    &__title {
+        margin-bottom: 1.2rem;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+}
+    &__img {
+        width: 100%;
+    }
+}

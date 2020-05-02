@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a,span {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+input,textarea {
+    display: block;
+}
+
+h1 {
+    font-size: 5.3rem;
+}
+h2 {
+    font-size: 3.8rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+img {
+    max-width: 100%;
+}
+h1,h2,h3,.nav__link-logo {
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    font-family: 'Quicksand',sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+// adress 
+.adress {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #2626263d;
+    a {
+        text-decoration: none;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+        .facebook {
+            color: blue;
+        }
+        .twitter {
+            color: rgb(88, 184, 216);
+        }
+        .instagram {
+            color: rgb(64,93,230);
+        }
+    }
+    a:first-child {
+        padding-left: 0;
+    }
+}
+
+// arrow
+.arrow-up {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(24, 7, 24);
+    text-align: center;
+    box-shadow: 2px 3px 10px 10px rgba(rgb(24, 7, 24),0.8);
+   a {
+    color: #fff;
+   }
+}

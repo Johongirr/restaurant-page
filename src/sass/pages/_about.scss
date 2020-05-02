@@ -1,0 +1,12 @@
+.about {
+    padding: 8rem 0;
+    &__container {
+        grid-gap: 50px;
+    }
+    &__paragraph {
+        letter-spacing: 2px;
+    }
+    &__restaurant-image {
+       width: 100%;
+    }
+}
