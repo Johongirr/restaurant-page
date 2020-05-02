@@ -27,11 +27,14 @@
     .adress {
         flex-direction: column;
     }
-    .nav__list-item {
-        display: none;
-    }
-    .header .nav .nav__list .d-none {
-        display: block;
+    
+    .nav__list {
+        flex-direction: column;
+        &-item {
+          
+            flex: 1;
+            margin-bottom: 1rem;
+        }
     }
     .menu__container {
         grid-template-columns: 1fr;
