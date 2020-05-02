@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@300&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+a, span {
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+input, textarea {
+  display: block; }
+
+h1 {
+  font-size: 5.3rem; }
+
+h2 {
+  font-size: 3.8rem; }
+
+h3 {
+  font-size: 1.2rem; }
+
+img {
+  max-width: 100%; }
+
+h1, h2, h3, .nav__link-logo {
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  font-family: 'Quicksand',sans-serif; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5; }
+
+.adress {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #2626263d; }
+  .adress a {
+    text-decoration: none;
+    padding-left: 1rem;
+    font-size: 1.5rem; }
+    .adress a .facebook {
+      color: blue; }
+    .adress a .twitter {
+      color: #58b8d8; }
+    .adress a .instagram {
+      color: #405de6; }
+  .adress a:first-child {
+    padding-left: 0; }
+
+.arrow-up {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #180718;
+  text-align: center;
+  box-shadow: 2px 3px 10px 10px rgba(24, 7, 24, 0.8); }
+  .arrow-up a {
+    color: #fff; }
+
+.btn {
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  margin-right: 1rem;
+  transition: all 0.5s;
+  font-size: 1.1rem;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: purple; }
+  .btn.menu__btn {
+    background-color: #fdb925; }
+  .btn-submit {
+    display: block;
+    border: 1px solid #333;
+    color: #252525;
+    font-size: 1.3rem;
+    padding: 0.7rem 0;
+    width: 100%;
+    margin-top: 1rem; }
+    .btn-submit:hover {
+      background-color: #252525;
+      color: #fff; }
+
+.container {
+  width: 90%;
+  max-width: 1160px;
+  margin: 0 auto; }
+
+.d-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px; }
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3.6rem; }
+  .header .header__paragraph {
+    font-size: 1.5rem; }
+  .gallery .gallery__container {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media (max-width: 850px) {
+  .adress {
+    flex-direction: column; }
+  .nav__list-item {
+    display: none; }
+  .header .nav .nav__list .d-none {
+    display: block; }
+  .menu__container {
+    grid-template-columns: 1fr; }
+  .menu .menu__title {
+    font-size: 3rem; }
+  .about__container {
+    grid-template-columns: 1fr; }
+  .gallery .gallery__container {
+    grid-template-columns: repeat(2, 1fr); }
+  .contact .contact__grid {
+    grid-template-columns: 1fr; }
+  h2 {
+    font-size: 3rem; } }
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 3.2rem; }
+  .header .header__paragraph {
+    font-size: 1.5rem; } }
+
+@media (max-width: 640px) {
+  .gallery .gallery__container {
+    grid-template-columns: 1fr; } }
+
+.menu {
+  padding: 8rem 0; }
+  .menu__text-container, .menu__btn-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center; }
+  .menu__container {
+    grid-gap: 50px; }
+  .menu__text-container {
+    margin-bottom: 2rem; }
+  .menu__paragraph-title {
+    font-size: 1.5rem; }
+  .menu__btn-container {
+    margin-bottom: 2rem; }
+  .menu__description {
+    display: flex; }
+  .menu__img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .menu__paragraph {
+    margin: 0.8rem 0; }
+  .menu__meal-price {
+    margin-bottom: 2rem;
+    color: #fdb925; }
+
+.header__hero-img {
+  background: url("../../img/restaurant.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.header .nav {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .nav__list {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    align-items: center; }
+    .header .nav__list-item {
+      margin-left: 1rem; }
+    .header .nav__list-item:first-child {
+      margin-left: 0; }
+  .header .nav__link {
+    color: #252525;
+    border: 1px solid #000;
+    padding: 0.3rem 1rem; }
+    .header .nav__link-logo {
+      font-size: 1.7rem;
+      color: #252525; }
+    .header .nav__link:hover {
+      background-color: #252525;
+      color: #fff; }
+  .header .nav__menu-btn {
+    font-size: 2.1rem;
+    color: #000;
+    cursor: pointer; }
+  .header .nav .d-none {
+    display: none; }
+
+.header__text-box {
+  max-width: 800px;
+  margin: 10rem 0 15rem 0; }
+
+.header__paragraph {
+  font-size: 1.9rem; }
+
+.about {
+  padding: 8rem 0; }
+  .about__container {
+    grid-gap: 50px; }
+  .about__paragraph {
+    letter-spacing: 2px; }
+  .about__restaurant-image {
+    width: 100%; }
+
+.gallery {
+  padding: 8rem 0;
+  text-align: center; }
+  .gallery__title {
+    margin-bottom: 1.2rem; }
+  .gallery__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+  .gallery__img {
+    width: 100%; }
+
+.contact {
+  padding: 8rem 0; }
+  .contact__title {
+    margin-bottom: 1.2rem; }
+  .contact__input {
+    font-size: 1.2rem;
+    padding: 0.7rem 0.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: #f7f2f2; }
+  .contact__input:last-child {
+    margin-bottom: 0; }
+  .contact label {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem; }
+  .contact textarea {
+    height: 330px;
+    resize: none; }
+
+.footer {
+  background-color: #252525;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 2rem 0; }
